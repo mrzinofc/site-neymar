@@ -35,7 +35,10 @@ header {
     padding: 40px 0;
     position: fixed;
     top: 0;
-    left: 0;  
+    left: 0;
+    
+    transition: .5s;
+    z-index: 9999999999999999999999;
 }
 
 header .interface {
@@ -47,6 +50,42 @@ header .interface {
 header .logo img {
     max-width: 60px;
 }
+
+/* Estilo do menu dinâmico */
+
+header .logo img.logo-preta {
+    display: none;
+}
+
+header.rolar {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000062;
+}
+
+header.rolar .menu-desktop nav ul li a {
+    color: #000;
+}
+
+header.rolar .btn-contato button {
+    border: 1px solid #000;
+    color: #000;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: #000; 
+    color: #fff;   
+}
+
+header.rolar .logo .logo-branca {
+    display: none;
+}
+
+header.rolar .logo .logo-preta {
+    display: block;
+}
+
+/*--------------------------------------*/
 
 header .logo img:hover {
     transition: .5s;
